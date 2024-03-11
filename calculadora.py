@@ -37,6 +37,22 @@ def multiplicacion(a, b):
   """
   return a * b
 
+def division(a, b):
+  """
+  Función para dividir dos números.
+
+  Parámetros:
+    a (float): Primer número.
+    b (float): Segundo número.
+
+  Retorno:
+    float: La división de a y b.
+  """
+  if b == 0:
+    print("ADVERTENCIA : No es posible dividir por cero :C).")
+    return None
+  return a / b
+
 def main():
   """
   Función principal que ejecuta la calculadora.
