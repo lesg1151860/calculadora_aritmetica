@@ -24,7 +24,18 @@ def resta(a, b):
   """
   return a - b
 
+def multiplicacion(a, b):
+  """
+  Función para multiplicar dos números.
 
+  Parámetros:
+    a (float): Primer número.
+    b (float): Segundo número.
+
+  Retorno:
+    float: La multiplicación de a y b.
+  """
+  return a * b
 
 def main():
   """
@@ -32,7 +43,7 @@ def main():
   """
   while True:
     # Mostrar menú de opciones
-    print("Calculadora Arit´metica LESG")
+    print("Calculadora Aritmética LESG")
     print("Opción 1 => Suma")
     print("Opción 2 => Resta")
     print("Opción 3 => Multiplicación")
@@ -40,7 +51,7 @@ def main():
     print("Opción 5 => Salir")
 
     # Solicitar opción al usuario
-    opcion = int(input("Seleccione una opción: "))
+    opcion = int(input("Por favor seleccione una opción: "))
 
     # Validar opción y realizar la operación
     if opcion == 1:
@@ -65,10 +76,10 @@ def main():
       if resultado is not None:
         print(f"La división de {a} y {b} es: {resultado}")
     elif opcion == 5:
-      print("¡Hasta luego!")
+      print("¡Nos vemos en una próxima :) !")
       break
     else:
-      print("Opción no válida. Intente de nuevo.")
+      print("Opción no válida. Por favor intente de nuevo.")
 
 if __name__ == "__main__":
   main()
