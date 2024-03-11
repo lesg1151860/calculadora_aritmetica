@@ -1,3 +1,31 @@
+def suma(a, b):
+  """
+  Función para sumar dos números.
+
+  Parámetros:
+    a (float): Primer número.
+    b (float): Segundo número.
+
+  Retorno:
+    float: La suma de a y b.
+  """
+  return a + b
+
+def resta(a, b):
+  """
+  Función para restar dos números.
+
+  Parámetros:
+    a (float): Primer número.
+    b (float): Segundo número.
+
+  Retorno:
+    float: La resta de a y b.
+  """
+  return a - b
+
+
+
 def main():
   """
   Función principal que ejecuta la calculadora.
@@ -16,18 +44,18 @@ def main():
 
     # Validar opción y realizar la operación
     if opcion == 1:
-      a = float(input("Ingrese el primer número: "))
-      b = float(input("Ingrese el segundo número: "))
+      a = float(input("Por favor ingrese el primer número: "))
+      b = float(input("Por favor ingrese el segundo número: "))
       resultado = suma(a, b)
       print(f"La suma de {a} y {b} es: {resultado}")
     elif opcion == 2:
-      a = float(input("Ingrese el primer número: "))
-      b = float(input("Ingrese el segundo número: "))
+      a = float(input("Por favor ingrese el primer número: "))
+      b = float(input("Por favor ingrese el segundo número: "))
       resultado = resta(a, b)
       print(f"La resta de {a} y {b} es: {resultado}")
     elif opcion == 3:
-      a = float(input("Ingrese el primer número: "))
-      b = float(input("Ingrese el segundo número: "))
+      a = float(input("Por favor ingrese el primer número: "))
+      b = float(input("Por favor ingrese el segundo número: "))
       resultado = multiplicacion(a, b)
       print(f"La multiplicación de {a} y {b} es: {resultado}")
     elif opcion == 4:
